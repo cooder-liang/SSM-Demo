@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
  * @author：梁洋 on 2019/7/11 0011 00:34
  * 邮箱：m18513333561@163.com
  */
-@Service
 public interface CustomerService {
 
     Customer getCustomerById(Long id);

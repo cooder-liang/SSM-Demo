@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
  * 邮箱：m18513333561@163.com
  */
 
+@Service
 public class CustomerServiceImpl implements CustomerService {
 
     @Autowired
@@ -20,7 +21,6 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public Customer getCustomerById(Long id) {
-        customerDao.getCustomerById(id);
-        return null;
+        return customerDao.getCustomerById(id);
     }
 }
